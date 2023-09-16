@@ -1,9 +1,3 @@
-
-output "module.ec2-jenkins_id"{
- value = module.terraform_ec2_agent.id
- description = "terraform instance id"
-}
-
 output "Infra_Deploy_Role" {
  value = module.iam_roles.iam_instance_profile_infra_deploy_access_arn 
  description = "admin role arn"
